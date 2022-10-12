@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>HTML Lesson</title>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>This is a form registration:</h1>
+  <form action="#">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="something@gmail.com"><br /> <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="password"> <br /><br>
+    <label for="fname">Name and Lastname:</label>
+    <input type="text" name="fname" id="fname" placeholder="John Sameson" minlength="2" maxlength="20"><br /><br>
+    <label for="dateOfBirthday">Date of Birth</label>
+    <input type="date" name="dateOfBirthday" id="dateOfBirthday"><br /><br>
+    <label for="phNumber">Phone Number:</label>
+    <input type="tel" name="phNumber" id="phNumber" pattern="0-9" placeholder="+90 552 80 40496"><br /><br>
+    <label for="chooseAplan">Choose a plan:</label>
+    <select name="#" id="#">
+      <option value="">Free Plan</option>
+      <optgroup label="A group of 3 plans with increasing price">
+        <option value="">10 euro</option>
+        <option value="">20 euro</option>
+        <option value="">30 euro</option>
+      </optgroup>
+    </select><br><br>
+    <label for="proplan">Pro Plan</label> <input type="checkbox" name="#" id="#"> <br><br>
+    <label for="cCardn">Credit Card Number:</label>
+    <input type="number" name="cCardn" id="cCardn" placeholder="XXXX XXXX XXXX XXXX" pattern="0-9"><br /><br>
+    <label for="cvc">CVC:</label> <input type="number" name="cvc" id="cvc" placeholder="XXX"><br /><br>
+    <label for="expirationD">Month/Year:</label> <input type="number" name="expirationD" id="expirationD"
+      maxlength="2" placeholder="XX"> /
+    <input type="number" name="year" id="year" maxlength="2" placeholder="XX"><br />
+    <label for="billAdress">Billing Adress:</label> <textarea name="billAdress" id="billAdress" cols="25" rows="4">
+
+    </textarea>
+
+  </form>
+</body>
+
+</html>
